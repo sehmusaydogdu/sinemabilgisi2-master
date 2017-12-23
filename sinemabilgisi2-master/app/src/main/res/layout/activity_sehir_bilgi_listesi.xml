@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ayben.sinema_bilgisi.SehirBilgiListesi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verileri Göster"
+            android:onClick="onKayitlariGoster"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioBursa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bursa"/>
+
+            <RadioButton
+                android:id="@+id/radiİzmir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="İzmir"/>
+        </RadioGroup>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lstView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>
